@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk-alpine
 
-ADD target/hello-api.jar hello-api.jar
+ADD target/*.jar app.jar
 
 ENTRYPOINT ["sh", "-c", "java -jar /hello-api.jar"]
 
